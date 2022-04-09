@@ -1,70 +1,45 @@
 ---
-title: 其他页面
+title: 本站导航
 date: 2018-07-23 00:00:00
 comments: false
 ---
 
-### 时光机
-> 类似于QQ动态，我会在这里发表我的日常。（通过评论功能）
-[点此进入](https://blog.fwder.cn/timemachine/)
+### 使用文档
+> maware / AnimeCDN 是什么？有什么用？如何使用？这里都可以得到解答。
+[点此进入](https://maware.cc/doc/)
 
-### 相册集
-> 一些博客需要的照片会放上来，日常生活的照片一般放在私人NAS上而不是博客上。
-[点此进入](https://blog.fwder.cn/albums/)
+### 提交番剧
+> 番剧有很多，你可以在本页面根据说明来提交本站缺失的番剧哦，感谢您的提交~
+[点此进入](https://maware.cc/add/)
 
-### 聊天室
-> 这里是博客聊天室页面，你可以发送评论来与小伙伴们聊天~
-[点此进入](https://comment.blog.fwder.cn)
+### 举报违规
+> 当你认为部分番剧内容不符合本站限制的[规范](https://maware.cc/doc/#审核规范)时,你可以进行举报。
+[点此进入](https://maware.cc/report/)
 
-### 友链列表
-> 友链列表页面。
-[点此进入](https://blog.fwder.cn/links/)
+### 番剧索引
+> 根据番剧更新的时间前后来排序本站已有的番剧。
+[点此进入](https://maware.cc/categories/)
 
-### 小游戏
-> 一些web小游戏推荐。
-[点此进入](https://blog.fwder.cn/games/)
+### 番剧Tags
+> 番剧的类型（详见[文档](https://maware.cc/doc/#提交规范)）
+[点此进入](https://maware.cc/tags)
 
-### 二次元老婆
-> 二次元老婆页面。
-[点此进入](https://blog.fwder.cn/girls/)
+### 关于 maware
+> 关于 maware 的介绍页面。
+[点此进入](https://maware.cc/about/)
 
-### 捐赠
-> 捐赠页面。
-[点此进入](https://blog.fwder.cn/praise/)
+### 关于 AnimeCDN
+> 关于 AnimeCDN 的介绍页面。
+[点此进入](https://maware.cc/about#comment/)
 
-### 关于我
+### Github - weclont/maware
+[点此进入](https://github.com/weclont/maware)
+
+### Github - AnimeCDN/AnimeCDN
+[点此进入](https://github.com/AnimeCDN/AnimeCDN)
+
+### Github - AnimeCDN
 > 关于我页面。
-[点此进入](https://blog.fwder.cn/about/)
+[点此进入](https://github.com/AnimeCDN)
 
-### 关于我 - 完整版
-> 关于我的完整介绍页面。
-[点此进入](https://blog.fwder.cn/about-complex/)
-
-### 关于博客
-> 关于博客页面。
-[点此进入](https://blog.fwder.cn/about/site.html)
-
-### 工具
-> 一些小工具的推荐。
-[点此进入](https://blog.fwder.cn/tools/)
-
-### 跳转页面
-> 关于本站的其他无关紧要的链接会被放到这里。
-[点此进入](https://blog.fwder.cn/to/)
-
-### 分类
-> 文章的分类列表，按照时间线排版。
-[点此进入](https://blog.fwder.cn/categories/)
-
-### 标签
-> 标签云页面。
-[点此进入](https://blog.fwder.cn/tags/)
-
-### 404房间
-> 本站的404房间。
-[点此进入](https://blog.fwder.cn/404.html)
-
-### 其他页面整理页面
-> 禁止套娃（）
-[点此进入](https://blog.fwder.cn/404.html)
 
