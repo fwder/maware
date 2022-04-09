@@ -13,4 +13,5 @@ package.json
 package-lock.json
 gitpush.bat
 hexog.bat
+hexocl.bat
 source/

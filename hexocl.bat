@@ -1,1 +1,0 @@
-hexo cl && pause
