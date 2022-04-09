@@ -12,3 +12,5 @@ _config.yun.yml
 package.json
 package-lock.json
 gitpush.bat
+hexog.bat
+source/
