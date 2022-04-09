@@ -1,0 +1,275 @@
+mode: auto
+
+pjax:
+  enable: true
+
+favicon: https://cdn.fwder.cn/images/favicon.ico
+
+head:
+  js:
+    async:
+      iconfont: //at.alicdn.com/t/font_3297175_2ml40aoltmp.js
+
+avatar:
+  url: https://cdn.fwder.cn/images/header.jpg
+  status:
+    enable: true
+
+bg_image:
+  enable: true
+  url: https://api.fwder.cn/pic
+  dark: https://api.fwder.cn/pic
+  # blur: 30px # 设置背景模糊程度
+  opacity: 0.8
+
+reward:
+  enable: true
+  comment: 我很可爱，请给我钱
+  methods:
+    - name: 支付宝
+      path: https://cdn.fwder.cn/images/alipay-qrcode.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    - name: 微信支付
+      path: https://cdn.fwder.cn/images/wechat-qrcode.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line
+    - name: BTC 支付
+      path: https://cdn.fwder.cn/images/btc-qrcode.png
+      color: "#12B7F5"
+      icon: icon-BTC
+    - name: ETH 支付
+      path: https://cdn.fwder.cn/images/eth-qrcode.png
+      color: "#12B7F5"
+      icon: icon-ETH
+    - name: ATOM 支付
+      path: https://cdn.fwder.cn/images/atom-qrcode.png
+      color: "#12B7F5"
+      icon: icon-atom
+
+wordcloud:
+  enable: true
+
+post_meta:
+  item_text: false
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+
+banner:
+  enable: true
+  title: 凌维三度の博客
+  src: /js/ui/banner.js
+  border: true
+  cloud:
+    enable: true
+    color: "white"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+
+fireworks:
+  enable: true
+  colors:
+    - "102, 167, 221"
+    - "62, 131, 225"
+    - "33, 78, 194"
+
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - .post-content img
+
+mourn:
+  enable: false
+
+notice:
+  enable: true
+  content: "R.I.P. 晚安，MU5735。"
+
+comment:
+  enable: true
+  tips:
+    - 如果您有任何关于博客内容的相关讨论，欢迎在下方评论与我交流。
+  candidates:
+    - waline
+
+waline:
+  enable: true
+  dark: auto
+  serverURL: comment.blog.fwder.cn
+  emoji: [
+    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
+    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji'
+  ]
+  visitor: true
+  comment: true
+
+engine_search:
+  enable: false
+
+local_search:
+  enable: true
+  src: /js/search/local-search.js
+
+codeblock:
+  copy_btn: true
+  prismjs:
+    light: default
+    dark: tomorrow
+
+creative_commons:
+  license: by-nc-sa
+  post: true
+  language: deed.zh
+  clipboard: false
+
+github_issues:
+  enable: false
+
+github_discussions:
+  enable: false
+
+disqusjs:
+  enable: false
+  shortname: Weclont
+  apikey: ouoGQCaamOKdJgyZU5DKcpFnRIg3SNzvk0nwygPtlcTRJuE68c8igvrZGW4wAJoN
+
+footer:
+  since: 2018
+  icon: 
+    url: https://p.fwder.cn
+    title: 十万巫女的赛钱箱
+  beian:
+    enable: false
+  support:
+    enable: false
+  custom_text:
+  powered:
+    enable: true
+  live_time:
+    enable: false
+    prefix: 本博客在站长的折腾下勉强运行了
+    suffix: (●'◡'●)
+    start_time: "2018-07-29T00:00:00"
+
+google_analytics:
+  enable: true
+  id: G-ZBDCHHLGGE
+
+google_adsense:
+  enable: true
+  client: ca-pub-1253804942758639
+
+post_edit:
+  enable: false
+
+albums:
+  enable: true
+
+girls:
+  enable: true
+
+categories:
+  特殊: dimgrey
+
+pages:
+  - name: 其他页面
+    url: /pages/
+    icon: icon-pages
+    color: '#FFD306'
+  - name: 友链列表
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
+  - name: 二次元老婆
+    url: /girls/
+    icon: icon-women-line
+    color: hotpink
+
+menu:
+  custom:
+    title: 留言板
+    path: /about/#comment
+    icon: icon-clipboard-line
+
+cursor:
+  enable: true
+
+baidu_push: true
+
+google_tagmanager:
+  enable: true
+  id: GTM-NSQD3NV
+
+wordcount:
+  enable: true
+  count: true
+  time: true
+
+say:
+  api: https://el-bot-api.vercel.app/api/words/young
+  hitokoto:
+    enable: true
+    api: https://v1.hitokoto.cn/?c=a
+
+aplayer:
+  global: true
+  meting: true
+  widget:
+    enable: true
+    autoplay: false
+    loop: all
+    order: list
+    preload: auto
+    volume: 0.7
+    mutex: true
+    lrcType: 0
+    listFolded: false
+    listMaxHeight: 340px
+    meting:
+      enable: true
+      id: 2637773410
+      server: tencent
+      type: playlist
+
+katex:
+  copy_tex: true
+  global: false
+
+social:
+  - name: RSS
+    link: /atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
+  - name: QQ 群 607998210
+    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
+    link: https://qm.qq.com/cgi-bin/qm/qr?k=vwFpfU1MuhGqaO4mHeRsDK9dy1Zc-3kF&jump_from=webapi
+    icon: icon-qq-line
+    color: "#12B7F5"
+  - name: GitHub
+    link: https://github.com/weclont
+    icon: icon-github-line
+    color: "#6e5494"
+  - name: 哔哩哔哩
+    link: https://space.bilibili.com/125160481
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  - name: Telegram
+    link: https://t.me/weclont
+    icon: icon-telegram-line
+    color: "#0088CC"
+  - name: E-Mail
+    link: mailto:weclont@qq.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: Travelling
+    link: https://travellings.link
+    icon: icon-train-line
+    color: black
