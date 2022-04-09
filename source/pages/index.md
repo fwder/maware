@@ -1,6 +1,6 @@
 ---
 title: 本站导航
-date: 2018-07-23 00:00:00
+date: 2022-04-03 00:00:00
 comments: false
 ---
 
@@ -39,7 +39,6 @@ comments: false
 [点此进入](https://github.com/AnimeCDN/AnimeCDN)
 
 ### Github - AnimeCDN
-> 关于我页面。
 [点此进入](https://github.com/AnimeCDN)
 
 
