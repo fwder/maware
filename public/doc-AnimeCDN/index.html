@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="夜夜suki"><meta name="copyright" content="夜夜suki"><meta name="generator" content="Hexo 6.1.0"><meta name="theme" content="hexo-theme-yun"><title>AnimeCDN 使用文档 | Maware</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.2.4/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="//at.alicdn.com/t/font_1140697_dxory92pb0h.js" async></script><script src="https://cdn.jsdelivr.net/npm/@unocss/runtime/mini.global.js"></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer type="module"></script><script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script><link rel="icon" type="image/png" href="https://cdn.maware.cc/assets/images/favicon.ico"><link rel="mask-icon" href="https://cdn.maware.cc/assets/images/favicon.ico" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"maware.cc","root":"/","title":"旋转吧！雪月花","version":"1.8.11","mode":"auto","copycode":true,"page":{"isPost":false},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn/?c=a","hitokoto":true},"local_search":{"path":"/search.xml"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]},"waline":{"config":{"enable":true,"serverURL":"comment.maware.cc","comment":true,"dark":"auto","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji"],"visitor":true,"el":"#waline","lang":"zh-CN"},"cdn":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","dark":"html.dark"},"vendors":{"darken":"https://cdn.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><link rel="alternate" href="/atom.xml" title="Maware" type="application/atom+xml"><script src="//at.alicdn.com/t/font_3297175_2ml40aoltmp.js" async></script><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><meta name="description" content="AnimeCDN 使用文档AnimeCDN 项目介绍AnimeCDN 项目是什么AnimeCDN 是基于 Github 代码托管库 + Vercel 中转节点 的番剧存储服务。 使用 Github 存储库项目存储在 Github 近乎无限的存储空间（对于个人用户来说，单文件不超过100M、单个库不超过100G），所以 AnimeCDN 可以存储大量番剧资源并保证在较长时间内不会丢失。  这是一个错">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AnimeCDN 使用文档">
+<meta property="og:url" content="https://maware.cc/doc-AnimeCDN/index.html">
+<meta property="og:site_name" content="Maware">
+<meta property="og:description" content="AnimeCDN 使用文档AnimeCDN 项目介绍AnimeCDN 项目是什么AnimeCDN 是基于 Github 代码托管库 + Vercel 中转节点 的番剧存储服务。 使用 Github 存储库项目存储在 Github 近乎无限的存储空间（对于个人用户来说，单文件不超过100M、单个库不超过100G），所以 AnimeCDN 可以存储大量番剧资源并保证在较长时间内不会丢失。  这是一个错">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn1.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn2.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn3.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn4.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn5.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn6.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn7.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn8.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn9.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn10.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn11.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn12.jpg">
+<meta property="og:image" content="https://cdn.maware.cc/assets/images/docanimecdn12.jpg">
+<meta property="article:published_time" content="2022-04-02T10:57:49.000Z">
+<meta property="article:modified_time" content="2022-04-10T02:39:57.191Z">
+<meta property="article:author" content="夜夜suki">
+<meta property="article:tag" content="使用文档">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.maware.cc/assets/images/docanimecdn1.jpg"><script>(function() {
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><div class="sidebar-panel sidebar-panel-active" id="site-overview-wrap"><div class="site-info"><a class="site-author-avatar" href="/about/" title="夜夜suki"><img width="96" loading="lazy" src="https://cdn.maware.cc/assets/images/header.jpg" alt="夜夜suki"><span class="site-author-status" title="永远相信美好的事情即将发生">😊</span></a><div class="site-author-name"><a href="/about/">夜夜suki</a></div><a class="site-name" href="/about/site.html">Maware</a><sub class="site-subtitle">旋转吧！雪月花</sub><div class="site-desciption">本站是一个番剧资源站，详见使用文档 QWQ</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">4</span></a></div><a class="site-state-item hty-icon-button" href="/about/#comment" title="留言板"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-clipboard-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/AnimeCDN/AnimeCDN" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://travellings.link" title="Travelling" target="_blank" style="color:var(--hty-text-color)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-train-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/pages/" title="其他页面" style="color:#FFD306"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-pages"></use></svg></a><a class="links-item hty-icon-button" href="/links/" title="节点列表" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div></aside><main class="sidebar-translate" id="content"><div class="hty-card" id="page"><header class="post-header"><h1 class="post-title" itemprop="name headline">AnimeCDN 使用文档</h1></header><div class="text-center"><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2022-04-02 18:57:49" itemprop="dateCreated datePublished" datetime="2022-04-02T18:57:49+08:00">2022-04-02</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="修改时间：2022-04-10 10:39:57" itemprop="dateModified" datetime="2022-04-10T10:39:57+08:00">2022-04-10</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="本文字数">1.3k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="阅读时长">4m</span></span></span></div></div><article id="page"><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><h2 id="AnimeCDN-使用文档"><a href="#AnimeCDN-使用文档" class="headerlink" title="AnimeCDN 使用文档"></a>AnimeCDN 使用文档</h2><h3 id="AnimeCDN-项目介绍"><a href="#AnimeCDN-项目介绍" class="headerlink" title="AnimeCDN 项目介绍"></a>AnimeCDN 项目介绍</h3><h4 id="AnimeCDN-项目是什么"><a href="#AnimeCDN-项目是什么" class="headerlink" title="AnimeCDN 项目是什么"></a>AnimeCDN 项目是什么</h4><p>AnimeCDN 是基于 Github 代码托管库 + Vercel 中转节点 的番剧存储服务。</p>
+<h5 id="使用-Github-存储库"><a href="#使用-Github-存储库" class="headerlink" title="使用 Github 存储库"></a>使用 Github 存储库</h5><p>项目存储在 Github 近乎无限的存储空间（对于个人用户来说，单文件不超过100M、单个库不超过100G），所以 AnimeCDN 可以存储大量番剧资源并保证在较长时间内不会丢失。</p>
+<blockquote>
+<p>这是一个错误的使用示例。<a target="_blank" rel="noopener" href="https://docs.github.com/cn/repositories/working-with-files/managing-large-files/about-large-files-on-github">详见官方文档</a> 虽然 Github 提供近乎无限的资源，但由于 Git 始终不适用于大文件存储，您也不应该将文件存储服务托管在 Github 上。</p>
+<blockquote>
+<p>我们建议每个仓库均保持在 1GB 以下。 仓库的硬限制为 100GB。 如果达到 75GB，推送时您将在终端收到 Git 的警告。 如果将大文件留在仓库之外，则此限制很容易保持。 如果仓库超过 1GB，您可能会收到来自 GitHub 支持的礼貌电子邮件，要求您减小仓库的大小以使其恢复。</p>
+</blockquote>
+</blockquote>
+<p>因此，我们将会使用更多的库来满足空间需求（您将会在 AnimeCDN 项目中看到很多作为分节点的库），并且您将看到所有超过100M的大文件都被拆分成多个文件储存在库中，您可能需要调整您的程序逻辑来适配这种规则。</p>
+<h5 id="使用-Vercel-作为中转节点"><a href="#使用-Vercel-作为中转节点" class="headerlink" title="使用 Vercel 作为中转节点"></a>使用 Vercel 作为中转节点</h5><p>由于 Github 资源服务器在中国被墙，在没有魔法上网的前提下是不能访问资源地址的，所以我们使用了 Vercel 的路由重写功能来为我们搭建中转节点（Vercel 同样有限制，普通用户限制每月200G的流量）。</p>
+<p>您也可以使用您自己搭建的中转节点来代理。</p>
+<blockquote>
+<p>如果您有自己的服务器或者Vercel账号，我们强烈建议您使用自己搭建的节点来进行中转。（详见后文教程）（官方节点撑不住这么多人艹啊啊啊）</p>
+</blockquote>
+<!-- > AnimeCDN 每个分节点必须使用`master`分支。 -->
+
+<h4 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h4><blockquote>
+<p>AnimeCDN 没有优化相关资源检索的能力，您可以使用更加方便快捷的 <a href="https://maware.cc/doc-Maware/">Maware</a> 项目搜索资源。</p>
+</blockquote>
+<p>首先，访问 AnimeCDN 的 Github 页面。<a target="_blank" rel="noopener" href="https://github.com/AnimeCDN/AnimeCDN">点此进入</a></p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn1.jpg" loading="lazy"></p>
+<p>您可以看到<code>index.md</code>文件，这个文件收录了 AnimeCDN 所有节点下的番剧信息，您可以直接在<a target="_blank" rel="noopener" href="https://github.com/AnimeCDN/AnimeCDN/blob/master/index.md">index.md</a>里面搜索您想看的番剧，里面会有对应的分节点名称和对应集数。</p>
+<p>例如：</p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn2.jpg" loading="lazy"></p>
+<p>您可以通过 Github 进入对应分节点并且获取资源地址：</p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn3.jpg" loading="lazy"></p>
+<p>修改地址栏为分节点项目地址。</p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn4.jpg" loading="lazy"></p>
+<p>根据第一张图的目录结构找到您要获取的资源的文件夹。</p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn5.jpg" loading="lazy"></p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn6.jpg" loading="lazy"></p>
+<p>把页面下拉到最底部，找到<code>video.m3u8</code>文件，点击它。</p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn7.jpg" loading="lazy"></p>
+<p>点击文件内容栏上的<code>Raw</code>，获取视频文件直链：</p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn8.jpg" loading="lazy"></p>
+<p>跳转后，浏览器地址栏中地址即为视频直链，可直接播放。</p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn9.jpg" loading="lazy"></p>
+<p>您也可以参照目录结构直接修改下面的地址来获取直链：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/AnimeCDN/AnimeCDN1/master/%7B%E5%AF%B9%E5%BA%94%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%7D/video.m3u8">https://raw.githubusercontent.com/AnimeCDN/AnimeCDN1/master/{对应目录结构}/video.m3u8</a></p>
+</blockquote>
+<p>例如：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/AnimeCDN/AnimeCDN1/master/anime/%E8%B5%9B%E9%A9%AC%E5%A8%98/%E8%B5%9B%E9%A9%AC%E5%A8%98-%E7%AC%AC1%E8%AF%9D%20%E6%A2%A6%E6%83%B3%E7%9A%84%E5%A4%A7%E9%97%A8/video.m3u8">https://raw.githubusercontent.com/AnimeCDN/AnimeCDN1/master/anime/%E8%B5%9B%E9%A9%AC%E5%A8%98/%E8%B5%9B%E9%A9%AC%E5%A8%98-%E7%AC%AC1%E8%AF%9D%20%E6%A2%A6%E6%83%B3%E7%9A%84%E5%A4%A7%E9%97%A8/video.m3u8</a></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>从这里开始，我们将会默认您有一定的使用 Github , Git 和 Vercel 的相关知识，如果您不了解相关知识您可以浏览 <a href="https://maware.cc/doc-Maware/">Maware 使用文档</a> 来进行后面的操作。</p>
+</blockquote>
+<hr>
+<h4 id="番剧提交"><a href="#番剧提交" class="headerlink" title="番剧提交"></a>番剧提交</h4><blockquote>
+<p>！！！极其重要！！！ 当您提交视频资源时，您需要确保视频资源符合中国相关法律法规，本项目不接受任何违法资源（包括但不限于黄色、暴力等内容），请悉知！ <a href="https://maware.cc/about/site.html">详见关于本站</a></p>
+</blockquote>
+<blockquote>
+<p>如果您对使用git,python不熟悉或者您没有相关的番剧资源，请根据 <a href="https://maware.cc/doc-Maware/">Maware 使用文档</a> 到 <a href="https://maware.cc/add/">番剧提交页面</a> 提交番剧链接。</p>
+</blockquote>
+<blockquote>
+<p>希望大家可以自己提交资源并且提issue给我们，<del>因为我们也很懒</del>233333</p>
+</blockquote>
+<p>如果 AnimeCDN 没有找到您喜爱的番剧，而您恰好有番剧资源，您可以使用 Git 来提交到您个人的存储库中。</p>
+<p>在开始之前，由于 GitHub 对单个文件大小有限制，您可能需要下面这个项目来帮助您完成视频分段。</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/AnimeCDN/AnimeCDNVideoCutter">Github - AnimeCDNVideoCutter</a></p>
+</blockquote>
+<p>运行 Python 脚本，只需输入您视频文件(暂只支持mp4)所在的目录位置，几秒钟就可以全部转换成功。</p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn10.jpg" loading="lazy"></p>
+<p>新建一个文件夹，把生成的文件夹全部放入。</p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn11.jpg" loading="lazy"></p>
+<p>打开cmd，进入新建的目录下。</p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn12.jpg" loading="lazy"></p>
+<p>浏览器进入 <a target="_blank" rel="noopener" href="https://github.com/">Github</a> ，新建一个公开库，随便取名字。</p>
+<p><img src="https://cdn.maware.cc/assets/images/docanimecdn12.jpg" loading="lazy"></p>
+<p>然后在cmd中输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;initial commit&quot;</span><br><span class="line">git branch -M master</span><br><span class="line">git remote add origin &#123;你的项目git地址&#125;</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<p>等待文件提交成功。</p>
+<p>提交成功后，根据提示在 <a target="_blank" rel="noopener" href="https://github.com/AnimeCDN/AnimeCDN/issues/new?assignees=&labels=%E7%95%AA%E5%89%A7%E6%8F%90%E4%BA%A4&template=beta.yml">提交页面</a> 提交 Issue 即可，感谢您的支持！</p>
+</div></section></article></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2022 </span><a class="with-love" id="animate" target="_blank" rel="noopener" href="https://github.com/AnimeCDN/AnimeCDN" title="本站由 AnimeCDN 提供服务~"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></a><span class="author"> 夜夜suki</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v6.1.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.8.11</span></div></footer><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/js/search/local-search.js" defer type="module"></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div id="local-search-result"></div></div></div></body></html>

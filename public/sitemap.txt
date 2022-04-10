@@ -1,6 +1,9 @@
-https://maware.cc/links/index.html
+https://maware.cc/doc-AnimeCDN/index.html
+https://maware.cc/about/index.html
+https://maware.cc/about/site.html
+https://maware.cc/doc-Maware/index.html
 https://maware.cc/2022/04/10/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/
-https://maware.cc/doc/index.html
+https://maware.cc/links/index.html
 https://maware.cc/2022/04/10/%E8%B5%9B%E9%A9%AC%E5%A8%98/
 https://maware.cc/pages/index.html
 https://maware.cc/add/index.html
@@ -8,8 +11,6 @@ https://maware.cc/tags/index.html
 https://maware.cc/report/index.html
 https://maware.cc/404.html
 https://maware.cc/categories/index.html
-https://maware.cc/about/site.html
-https://maware.cc/about/index.html
 https://maware.cc/
 https://maware.cc/tags/%E6%96%87%E6%A1%A3/
 https://maware.cc/tags/%E6%B8%B8%E6%88%8F%E6%94%B9/
